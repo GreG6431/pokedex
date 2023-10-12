@@ -17,19 +17,12 @@ const pokemonList = [
 function PokemonCard() {
     const pokemon = pokemonList[1];
 
-    let imagePokemon;
-
-    if (pokemon.imgSrc) {
-        imagePokemon = <img src={pokemon.imgSrc} />
-
-    } else {
-        imagePokemon = <p>???</p>
-
-    }
+    console.log(pokemon.imgSrc)
 
 
     return <figure>
-        {imagePokemon}
+        {pokemon.imgSrc ? <img src={pokemon.imgSrc} /> : <p>???</p>}
+
 
         <figcaption>
             {pokemon.name}
