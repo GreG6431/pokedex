@@ -1,7 +1,5 @@
-
-
-import PokemonCard from './components/PokemonCard'
-import './App.css'
+import PokemonCard from "./components/PokemonCard";
+import "./App.css";
 
 const pokemonList = [
   {
@@ -10,22 +8,21 @@ const pokemonList = [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
   {
+    name: "reptincel",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+  },
+  {
     name: "mew",
   },
-]
-
-
+];
 
 function App() {
   return (
-
-    <PokemonCard pokemon={pokemonList[1]} />
-
-
-    /*<div>
-      <PokemonCard />
-    </div>*/
-  )
+    <div>
+      <PokemonCard pokemon={pokemonList[0]} />
+    </div>
+  );
 }
 
-export default App
+export default App;
